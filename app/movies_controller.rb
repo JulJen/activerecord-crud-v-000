@@ -22,7 +22,7 @@ def can_be_created_with_a_hash_of_attributes
   movie = Movie.create
 end
 
-def can_be_created_in_a_block(args = )
+def can_be_created_in_a_block(args = nil)
   Movie.create do |m|
     movie = m.save
   end
