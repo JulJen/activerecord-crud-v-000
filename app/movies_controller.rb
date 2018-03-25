@@ -38,7 +38,7 @@ def can_get_the_last_item_in_the_database
 end
 
 def can_get_size_of_the_database
-  __
+  Movie.all.size
 end
 
 def can_find_the_first_item_from_the_database_using_id
@@ -61,7 +61,7 @@ end
 def can_be_found_updated_and_saved
   # Updtate the title "Awesome Flick" to "Even Awesomer Flick"
   Movie.create(title: "Awesome Flick")
-  
+
   __
   __
 end
