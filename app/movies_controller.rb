@@ -81,9 +81,9 @@ def can_update_multiple_items_at_once
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
     # movies = Movie.find_by(:title)
-    movies.update(title: "A Movie")
+    movies.update_all(title: "A Movie")
   end
-  movies.save
+  # movies.save
 end
 
 def can_destroy_a_single_item
