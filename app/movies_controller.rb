@@ -84,7 +84,7 @@ def can_update_multiple_items_at_once
     # movies = Movie.find_by(:title)
     movies.update(title: "A Movie")
   end
-  movies
+  movies.save
 end
 
 def can_destroy_a_single_item
